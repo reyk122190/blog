@@ -1,0 +1,6 @@
+<%= link_to 'New', new_post_path %>
+<br>
+<% @posts.each do |post| %>
+<p><%= link_to post.title, post %></p>
+<p><%= link_to 'Edit', edit_post_path(post) %></p>
+<% end %>
